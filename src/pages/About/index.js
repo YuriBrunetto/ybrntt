@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 // Components
 import Layout from '../../layout'
+import Button from '../../components/common/Button'
 
 import { Container } from './styles'
 
@@ -46,14 +47,10 @@ export default class extends Component {
               </p>
             </div>
 
-            <a
+            <Button
               href="/curriculum.pdf"
               title="Download my CV / Curriculum"
-              className="common-button"
-              target="_blank"
-            >
-              Download my CV / Curriculum
-            </a>
+            />
           </section>
         </Container>
       </Layout>

@@ -63,17 +63,6 @@ const GlobalStyle = createGlobalStyle`
   .common-header {
     text-align: center;
   }
-
-  .common-button {
-    background-color: var(--primary-color);
-    color: #fff;
-    font-weight: bold;
-    display: inline-block;
-    height: 60px;
-    line-height: 60px;
-    padding: 0 26px;
-    text-decoration: none;
-  }
 `
 
 export default GlobalStyle

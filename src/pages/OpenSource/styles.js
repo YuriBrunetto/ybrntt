@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  .loading {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
   .repos {
     display: flex;
     flex-direction: column;
