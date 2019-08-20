@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: flex-end;
     position: relative;
+    min-height: 402px;
 
     .title {
       bottom: 0;
