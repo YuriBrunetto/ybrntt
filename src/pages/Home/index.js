@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-// Layout
+// Components
 import Layout from '../../layout'
+import Socials from '../../components/common/Socials'
 
 import { Container } from './styles'
 
@@ -19,6 +20,7 @@ export default class extends Component {
               <br />
               enthusiast &amp; musician.
             </h2>
+            <Socials />
           </section>
         </Layout>
       </Container>
