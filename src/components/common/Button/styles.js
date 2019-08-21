@@ -9,4 +9,10 @@ export const Link = styled.a`
   line-height: 60px;
   padding: 0 26px;
   text-decoration: none;
+  will-change: background-color;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #6564c4;
+  }
 `
