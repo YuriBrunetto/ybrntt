@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ReactPageScroller from 'react-page-scroller'
+import workItems from '../../static/work.json'
 
 // Components
 import Layout from '../../layout'
@@ -39,8 +40,8 @@ export default class extends Component {
                   containerWidth="100%"
                   containerHeight={window.innerHeight - 400}
                 >
-                  {[1, 2, 3, 4].map((item, i) => (
-                    <Project key={i} i={i} />
+                  {workItems.map((item, i) => (
+                    <Project key={i} item={item} i={i} />
                   ))}
                 </ReactPageScroller>
               )}
