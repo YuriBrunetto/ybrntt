@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   #main {
     display: flex;
-    min-height: calc(100vh - 120px - 56px);
+    min-height: calc(100vh - 120px - 100px);
   }
 
   .common-limiter {

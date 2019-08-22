@@ -37,7 +37,7 @@ export default class extends Component {
                 <ReactPageScroller
                   ref={c => (this.reactPageScroller = c)}
                   containerWidth="100%"
-                  containerHeight={400}
+                  containerHeight={window.innerHeight - 400}
                 >
                   {[1, 2, 3, 4].map((item, i) => (
                     <Project key={i} i={i} />

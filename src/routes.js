@@ -2,6 +2,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import OpenSource from './pages/OpenSource'
 import Work from './pages/Work'
+import TalkToMe from './pages/TalkToMe'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     title: 'Work',
     path: '/work',
     component: Work
+  },
+  {
+    title: 'Talk to me',
+    path: '/talk-to-me',
+    component: TalkToMe
   }
 ]
 

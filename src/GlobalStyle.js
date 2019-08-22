@@ -32,6 +32,16 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    margin-bottom: auto;
+  }
+
   .common-limiter {
     margin: 0 auto;
     max-width: 960px;

@@ -4,6 +4,7 @@ export const Container = styled.header`
   margin: 0 auto;
   max-width: 1366px;
   padding: 40px 0;
+  width: 100%;
 
   .wrap {
     align-items: center;
