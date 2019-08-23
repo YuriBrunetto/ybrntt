@@ -14,7 +14,7 @@ import socials from '../../../static/socials.json'
 import { Container } from './styles'
 
 const Socials = props => (
-  <Container>
+  <Container className="socials">
     {socials.map((item, i) => (
       <a
         key={i}

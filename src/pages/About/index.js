@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import LazyLoad from 'react-lazyload'
 
 // Components
 import Layout from '../../layout'
 import Button from '../../components/common/Button'
+import Placeholder from '../../components/common/Placeholder'
 
 import { Container } from './styles'
 
@@ -22,9 +24,11 @@ export default class extends Component {
                   open-source enthusiast
                 </h1>
               </div>
-              <figure>
-                <img src="/img/me.jpg" alt="Yuri Brunetto" />
-              </figure>
+              <LazyLoad height={400} placeholder={<Placeholder />}>
+                <figure>
+                  <img src="/img/me.jpg" alt="Yuri Brunetto" />
+                </figure>
+              </LazyLoad>
             </header>
 
             <div className="common-text">

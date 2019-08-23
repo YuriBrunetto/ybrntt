@@ -13,5 +13,10 @@ export const Container = styled.div`
     .common-button {
       margin-top: 16px;
     }
+
+    .socials {
+      padding-top: 0;
+      justify-content: center;
+    }
   }
 `

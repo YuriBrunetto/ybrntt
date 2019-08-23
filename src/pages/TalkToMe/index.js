@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 import Layout from '../../layout'
 import ContentHeader from '../../components/content/ContentHeader'
 import Button from '../../components/common/Button'
+import Socials from '../../components/common/Socials'
 
 import { Container } from './styles'
 
@@ -26,6 +27,7 @@ export default class extends Component {
                 href="mailto:brunettoyuri@gmail.com"
                 title="brunettoyuri@gmail.com"
               />
+              <Socials />
             </div>
           </section>
         </Container>

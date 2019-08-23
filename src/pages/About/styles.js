@@ -16,6 +16,7 @@ export const Container = styled.div`
       .common-title {
         position: relative;
         z-index: 2;
+        text-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
       }
 
       &:before {

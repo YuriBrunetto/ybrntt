@@ -31,7 +31,12 @@ export default class extends Component {
       <Layout>
         <Container>
           <section className="content">
-            <ContentHeader title="Work" subtitle="Some of my work." />
+            <ContentHeader
+              title="Work"
+              subtitle={
+                'A few projects I worked as <em>front-end developer</em>.'
+              }
+            />
 
             <div className="projects">
               {appIsMounted && (

@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  em {
+    font-style: italic;
+  }
+
   #root {
     min-height: 100vh;
     display: flex;
@@ -40,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
 
   main {
     margin-bottom: auto;
+    min-height: 400px;
   }
 
   .common-limiter {
@@ -68,10 +73,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     line-height: 180%;
     max-width: 84%;
-  }
-
-  .common-header {
-    text-align: center;
   }
 `
 

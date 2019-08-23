@@ -8,21 +8,7 @@ export const ProjectLink = styled.a`
   position: relative;
   overflow: hidden;
 
-  &:hover {
-    .content .text {
-      padding-left: 130px;
-
-      &:before {
-        transform: scaleX(1);
-      }
-    }
-
-    img {
-      opacity: 1;
-    }
-  }
-
-  .content {
+  .text {
     align-items: flex-start;
     color: #fff;
     display: flex;
@@ -33,43 +19,39 @@ export const ProjectLink = styled.a`
     width: 100%;
     z-index: 4;
 
-    .text {
-      padding: 20px 40px 30px;
-      position: relative;
-      transition: 0.6s ease-in-out;
+    .common-title {
+      background-color: var(--primary-color);
+      padding: 20px 30px 20px 40px;
+    }
 
-      &:before {
-        background-color: var(--dark-color);
-        content: '';
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        transform: scaleX(0);
-        transform-origin: 0% 50%;
-        transition: 0.3s;
-        width: 100%;
-        z-index: 1;
-      }
+    .stack {
+      background-color: var(--dark-color);
+      color: var(--primary-color);
+      font-size: 16px;
+      font-style: italic;
+      padding: 12px 30px 12px 40px;
+    }
 
-      .common-title,
-      .stack {
-        position: relative;
-        z-index: 10;
-      }
-
-      .stack {
-        color: rgba(255, 255, 255, 0.7);
-        font-size: 12px;
-        font-style: italic;
-        margin-top: 6px;
-      }
+    .common-title,
+    .stack {
+      z-index: 10;
     }
   }
 
   img {
-    opacity: 0.1;
     transition: 0.3s;
     width: 100%;
+  }
+
+  .placeholder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `
