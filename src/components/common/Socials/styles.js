@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   border-top: 1px solid $primary-color;
   display: flex;
-  margin-top: 30px;
-  padding-top: 30px;
+  margin-top: 40px;
 
   .socials-a {
     align-items: center;

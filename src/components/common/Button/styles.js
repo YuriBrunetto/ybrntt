@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-export const Link = styled.a`
+const Button = () => `
   background-color: var(--primary-color);
   color: #fff;
   font-weight: bold;
@@ -15,4 +16,11 @@ export const Link = styled.a`
   &:hover {
     background-color: #6564c4;
   }
+`
+
+export const A = styled.a`
+  ${Button}
+`
+export const LinkStyled = styled(Link)`
+  ${Button}
 `

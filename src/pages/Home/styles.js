@@ -14,6 +14,7 @@ export const Container = styled.div`
   .content {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     h1 {
       font-size: 64px;
@@ -30,6 +31,10 @@ export const Container = styled.div`
       font-style: italic;
       font-weight: 300;
       line-height: 120%;
+    }
+
+    .common-button {
+      margin-top: 30px;
     }
   }
 

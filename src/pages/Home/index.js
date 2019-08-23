@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 // Components
 import Layout from '../../layout'
 import Socials from '../../components/common/Socials'
+import Button from '../../components/common/Button'
 
 import { Container } from './styles'
 
@@ -21,6 +22,7 @@ export default class extends Component {
               enthusiast &amp; musician.
             </h2>
             <Socials />
+            <Button to="/work" title="See my work" />
           </section>
         </Layout>
       </Container>

@@ -8,6 +8,30 @@ export const ProjectLink = styled.a`
   position: relative;
   overflow: hidden;
 
+  &:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transition: opacity 0.3s;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 0;
+    }
+
+    img {
+      filter: grayscale(0);
+      transform: scale(1.1);
+    }
+  }
+
   .text {
     align-items: flex-start;
     color: #fff;
@@ -41,6 +65,7 @@ export const ProjectLink = styled.a`
   img {
     transition: 0.3s;
     width: 100%;
+    filter: grayscale(100%);
   }
 
   .placeholder {
