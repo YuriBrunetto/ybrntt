@@ -51,6 +51,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+
+    @media (max-width: 959px) {
+      padding: 0 24px;
+    }
   }
 
   .common-title {

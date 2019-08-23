@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactSVG from 'react-svg'
 
+// Components
+import Menu from '../Menu'
+
 import { Container } from './styles'
 
 const Header = props => (
@@ -15,20 +18,8 @@ const Header = props => (
         <ReactSVG src="/svg/logo.svg" />
       </Link>
 
-      <nav>
-        <Link to="/about" title="About" className="nav-a">
-          About
-        </Link>
-        <Link to="/open-source" title="Open-source" className="nav-a">
-          Open-source
-        </Link>
-        <Link to="/work" title="Work" className="nav-a">
-          Work
-        </Link>
-        <Link to="/talk-to-me" title="Talk to me" className="nav-a">
-          Talk to me
-        </Link>
-      </nav>
+      <button className="open-menu" />
+      <Menu />
     </div>
   </Container>
 )
