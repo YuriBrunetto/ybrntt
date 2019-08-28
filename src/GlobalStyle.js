@@ -45,12 +45,16 @@ const GlobalStyle = createGlobalStyle`
   main {
     margin-bottom: auto;
     min-height: 400px;
+
+    @media (max-width: 959px) {
+      margin-top: 40px;
+    }
   }
 
   .common-limiter {
     margin: 0 auto;
     max-width: 960px;
-    width: 100%;
+    /* width: 100%; */
 
     @media (max-width: 959px) {
       padding: 0 24px;
@@ -62,6 +66,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     line-height: 120%;
     margin: 0;
+
+    @media (max-width: 959px) {
+      font-size: 40px;
+    }
   }
 
   .common-subtitle {
