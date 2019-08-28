@@ -1,9 +1,23 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  @media (max-width: 959px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  }
+
   #main {
     display: flex;
-    min-height: calc(100vh - 120px - 100px);
+
+    @media (max-width: 959px) {
+      margin-bottom: unset;
+    }
+
+    @media (min-width: 960px) {
+      min-height: calc(100vh - 120px - 100px);
+    }
   }
 
   .common-limiter {
@@ -16,9 +30,18 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
 
+    @media (max-width: 959px) {
+      padding: 0 24px;
+    }
+
     h1 {
       font-size: 64px;
       margin: 0 0 30px;
+
+      @media (max-width: 959px) {
+        font-size: 40px;
+        margin-bottom: 16px;
+      }
 
       span {
         color: $primary-color;
@@ -31,10 +54,14 @@ export const Container = styled.div`
       font-style: italic;
       font-weight: 300;
       line-height: 120%;
+
+      @media (max-width: 959px) {
+        font-size: 18px;
+      }
     }
 
     .common-button {
-      margin-top: 30px;
+      margin-top: 40px;
     }
   }
 

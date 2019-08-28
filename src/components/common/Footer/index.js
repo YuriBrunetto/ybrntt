@@ -4,7 +4,7 @@ import { Container } from './styles'
 
 const Footer = () => (
   <Container>
-    &copy; {new Date().getFullYear()} Yuri Brunetto &mdash; All rights reserved
+    &copy; {new Date().getFullYear()} Made with ❤️ by Yuri Brunetto
   </Container>
 )
 

@@ -8,6 +8,7 @@ export const Container = styled.header`
 
   @media (max-width: 959px) {
     padding: 24px 0;
+    position: relative;
   }
 
   .wrap {
@@ -17,7 +18,7 @@ export const Container = styled.header`
     justify-content: space-between;
 
     @media (max-width: 959px) {
-      padding: 0 16px;
+      padding: 0 24px;
     }
 
     .logo {
@@ -26,6 +27,17 @@ export const Container = styled.header`
       div,
       svg {
         height: 100%;
+      }
+    }
+
+    .open-menu {
+      height: 40px;
+      width: 40px;
+      color: #fff;
+      font-size: 40px;
+
+      @media (min-width: 960px) {
+        display: none;
       }
     }
   }

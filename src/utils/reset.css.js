@@ -103,6 +103,7 @@ export const resetCss = () => `
   }
   body {
     line-height: 1;
+    overflow-x: hidden;
   }
   ol,
   ul {
@@ -122,5 +123,11 @@ export const resetCss = () => `
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+  button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: 0;
   }
 `

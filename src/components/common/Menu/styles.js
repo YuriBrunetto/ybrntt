@@ -4,6 +4,14 @@ export const Nav = styled.nav`
   align-items: center;
   display: flex;
 
+  @media (max-width: 959px) {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .nav-a {
     color: #fff;
     font-family: 'HelveticaNeue-CondensedBlack', sans-serif;

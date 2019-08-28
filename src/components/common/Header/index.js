@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactSVG from 'react-svg'
+import { MdMenu } from 'react-icons/md'
 
 // Components
 import Menu from '../Menu'
@@ -18,7 +19,10 @@ const Header = props => (
         <ReactSVG src="/svg/logo.svg" />
       </Link>
 
-      <button className="open-menu" />
+      <button type="button" className="open-menu">
+        <MdMenu />
+      </button>
+
       <Menu />
     </div>
   </Container>
