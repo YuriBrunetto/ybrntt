@@ -1,31 +1,54 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component } from 'react'
 import ReactSVG from 'react-svg'
-import { MdMenu } from 'react-icons/md'
+import { Link } from 'react-router-dom'
+import { MdMenu, MdClose } from 'react-icons/md'
+import classNames from 'classnames'
 
 // Components
 import Menu from '../Menu'
 
 import { Container } from './styles'
 
-const Header = props => (
-  <Container>
-    <div className="wrap">
-      <Link
-        to="/"
-        title="Yuri Brunetto &mdash; Front-end Developer"
-        className="logo"
-      >
-        <ReactSVG src="/svg/logo.svg" />
-      </Link>
+class Header extends Component {
+  state = {
+    menuOpen: false
+  }
 
-      <button type="button" className="open-menu">
-        <MdMenu />
-      </button>
+  handleMenu = () => {
+    this.setState({ menuOpen: !this.state.menuOpen })
+  }
 
-      <Menu />
-    </div>
-  </Container>
-)
+  render() {
+    const { menuOpen } = this.state
+    const menuClasses = classNames({
+      'open-menu': true,
+      active: menuOpen
+    })
+
+    return (
+      <Container>
+        <div className="wrap">
+          <Link
+            to="/"
+            title="Yuri Brunetto &mdash; Front-end Developer"
+            className="logo"
+          >
+            <ReactSVG src="/svg/logo.svg" />
+          </Link>
+
+          <button
+            type="button"
+            onClick={() => this.handleMenu()}
+            className={menuClasses}
+          >
+            {menuOpen ? <MdClose /> : <MdMenu />}
+          </button>
+
+          <Menu menuOpen={menuOpen} />
+        </div>
+      </Container>
+    )
+  }
+}
 
 export default Header

@@ -14,6 +14,7 @@ export const Container = styled.div`
 
     img {
       width: 100%;
+      max-width: 400px;
     }
 
     .title {

@@ -36,6 +36,10 @@ export const Container = styled.header`
       color: #fff;
       font-size: 40px;
 
+      &.active {
+        z-index: 20;
+      }
+
       @media (min-width: 960px) {
         display: none;
       }

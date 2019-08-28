@@ -5,6 +5,10 @@ export const Container = styled.div`
   display: flex;
   margin-top: 30px;
 
+  @media (max-width: 370px) {
+    flex-wrap: wrap;
+  }
+
   .socials-a {
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
@@ -17,13 +21,17 @@ export const Container = styled.div`
     width: 40px;
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
       box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-      color: $primary-color;
+      background-color: var(--primary-color);
+      color: #fff;
     }
 
     &:not(:first-child) {
       margin-left: 8px;
+
+      @media (max-width: 370px) {
+        margin-left: 5px;
+      }
     }
   }
 `

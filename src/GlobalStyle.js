@@ -54,10 +54,15 @@ const GlobalStyle = createGlobalStyle`
   .common-limiter {
     margin: 0 auto;
     max-width: 960px;
-    /* width: 100%; */
+    width: 100%;
 
     @media (max-width: 959px) {
       padding: 0 24px;
+      width: unset;
+    }
+
+    @media (max-width: 370px) {
+      padding: 0 16px;
     }
   }
 

@@ -34,6 +34,10 @@ export const Container = styled.div`
       padding: 0 24px;
     }
 
+    @media (max-width: 370px) {
+      padding: 0 8px;
+    }
+
     h1 {
       font-size: 64px;
       margin: 0 0 30px;
@@ -44,7 +48,7 @@ export const Container = styled.div`
       }
 
       span {
-        color: $primary-color;
+        color: var(--primary-color);
       }
     }
 
@@ -54,6 +58,7 @@ export const Container = styled.div`
       font-style: italic;
       font-weight: 300;
       line-height: 120%;
+      max-width: 360px;
 
       @media (max-width: 959px) {
         font-size: 18px;

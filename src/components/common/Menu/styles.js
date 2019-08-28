@@ -5,11 +5,25 @@ export const Nav = styled.nav`
   display: flex;
 
   @media (max-width: 959px) {
-    position: absolute;
     left: 0;
-    top: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--dark-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     visibility: hidden;
+    z-index: 10;
+    will-change: opacity, visibility;
+    transition: 0.3s;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   .nav-a {
@@ -20,25 +34,32 @@ export const Nav = styled.nav`
     text-transform: uppercase;
     position: relative;
 
-    &:hover:after {
-      opacity: 1;
+    @media (max-width: 959px) {
+      font-size: 24px;
+      padding: 12px;
     }
 
-    &:after {
-      background-color: var(--primary-color);
-      bottom: -6px;
-      content: '';
-      height: 2px;
-      left: 50%;
-      opacity: 0;
-      position: absolute;
-      transform: translateX(-50%);
-      transition: 0.3s;
-      width: 30px;
-    }
+    @media (min-width: 960px) {
+      &:hover:after {
+        opacity: 1;
+      }
 
-    &:not(:first-child) {
-      margin-left: 20px;
+      &:after {
+        background-color: var(--primary-color);
+        bottom: -6px;
+        content: '';
+        height: 2px;
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        transform: translateX(-50%);
+        transition: 0.3s;
+        width: 30px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
     }
   }
 `

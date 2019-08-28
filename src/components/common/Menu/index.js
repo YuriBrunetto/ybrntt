@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 import { Nav } from './styles'
 
-const Menu = () => (
-  <Nav>
+const Menu = ({ menuOpen }) => (
+  <Nav className={menuOpen && 'active'}>
     <Link to="/about" title="About" className="nav-a">
       About
     </Link>
