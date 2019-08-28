@@ -67,16 +67,4 @@ export const ProjectLink = styled.a`
     width: 100%;
     filter: grayscale(100%);
   }
-
-  .placeholder {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 `

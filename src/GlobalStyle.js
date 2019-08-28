@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
 
     @media (max-width: 959px) {
-      font-size: 40px;
+      font-size: 35px;
     }
   }
 
@@ -82,6 +82,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 24px;
     font-weight: 300;
     margin-top: 16px;
+
+    @media (max-width: 959px) {
+      font-size: 18px;
+    }
   }
 
   .common-text {

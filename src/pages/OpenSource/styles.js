@@ -6,6 +6,10 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 80px;
+
+    @media (max-width: 959px) {
+      margin-top: 40px;
+    }
   }
 
   .repos {
@@ -13,18 +17,26 @@ export const Container = styled.div`
     flex-direction: column;
     margin-top: 80px;
 
+    @media (max-width: 959px) {
+      margin-top: 40px;
+    }
+
     .repo {
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.05);
       padding: 20px 30px;
       text-decoration: none;
       transition: 0.3s;
+
+      @media (max-width: 959px) {
+        padding: 20px;
+      }
 
       &:hover {
         background-color: rgba(255, 255, 255, 0.01);
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
 
       .title {
@@ -33,6 +45,10 @@ export const Container = styled.div`
         display: flex;
         font-weight: bold;
         font-size: 20px;
+
+        @media (max-width: 959px) {
+          font-size: 18px;
+        }
 
         span {
           align-items: center;
@@ -52,7 +68,12 @@ export const Container = styled.div`
 
       .description {
         color: rgba(255, 255, 255, 0.7);
-        margin-top: 6px;
+        margin-top: 8px;
+
+        @media (max-width: 959px) {
+          line-height: 150%;
+          font-size: 14px;
+        }
       }
     }
   }
