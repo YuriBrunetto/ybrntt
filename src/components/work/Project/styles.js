@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectLink = styled.a`
+  background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   display: flex;
   height: 100%;
@@ -8,27 +9,29 @@ export const ProjectLink = styled.a`
   position: relative;
   overflow: hidden;
 
-  &:before {
-    content: '';
-    height: 100%;
-    width: 100%;
-    background-color: var(--primary-color);
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 3;
-    transition: opacity 0.3s;
-  }
-
-  &:hover {
+  @media (min-width: 960px) {
     &:before {
-      opacity: 0;
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: var(--primary-color);
+      opacity: 0.6;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+      transition: opacity 0.3s;
     }
 
-    img {
-      filter: grayscale(0);
-      transform: scale(1.1);
+    &:hover {
+      &:before {
+        opacity: 0;
+      }
+
+      img {
+        filter: grayscale(0);
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -43,9 +46,20 @@ export const ProjectLink = styled.a`
     width: 100%;
     z-index: 4;
 
+    @media (max-width: 959px) {
+      top: auto;
+      bottom: 0;
+      transform: unset;
+    }
+
     .common-title {
       background-color: var(--primary-color);
       padding: 20px 30px 20px 40px;
+
+      @media (max-width: 959px) {
+        padding: 1.1rem 1.6rem 1.1rem 2.2rem;
+        font-size: 18px;
+      }
     }
 
     .stack {
@@ -54,6 +68,11 @@ export const ProjectLink = styled.a`
       font-size: 16px;
       font-style: italic;
       padding: 12px 30px 12px 40px;
+
+      @media (max-width: 959px) {
+        padding: 0.8rem 1.6rem 0.8rem 2.2rem;
+        font-size: 12px;
+      }
     }
 
     .common-title,
@@ -63,8 +82,11 @@ export const ProjectLink = styled.a`
   }
 
   img {
-    transition: 0.3s;
     width: 100%;
-    filter: grayscale(100%);
+
+    @media (min-width: 960px) {
+      transition: 0.3s;
+      filter: grayscale(100%);
+    }
   }
 `

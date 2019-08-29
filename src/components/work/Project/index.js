@@ -18,7 +18,7 @@ const Project = ({ item: { title, url, technologies, image }, i }) => (
     </div>
     <LazyLoad height={400}>
       <img
-        src={`https://source.unsplash.com/random/800x450?${i}`}
+        src={`https://source.unsplash.com/random/800x800?${i}`}
         alt={title}
       />
     </LazyLoad>
