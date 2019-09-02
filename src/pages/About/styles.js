@@ -55,6 +55,16 @@ export const Container = styled.div`
       margin-top: 30px;
       max-width: 100%;
     }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      padding-bottom: 4px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .common-button {

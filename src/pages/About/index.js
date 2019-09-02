@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LazyLoad from 'react-lazyload'
+import { Link } from 'react-router-dom'
 
 // Components
 import Layout from '../../layout'
@@ -33,21 +34,22 @@ export default class extends Component {
 
             <div className="common-text">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                vestibulum pellentesque nulla, sit amet venenatis nulla
-                vestibulum non. Maecenas mi leo, luctus in lacus non, congue
-                placerat diam. Aenean facilisis condimentum viverra. Aenean
-                pretium augue quis dui placerat, eget cursus velit ultricies.
-                Maecenas hendrerit euismod enim eu faucibus. Nunc aliquam neque
-                nec rhoncus gravida. Aliquam sit amet elit quis risus sodales
-                dictum. Ut sit amet porttitor est, sit amet commodo lacus.
+                I started my professional career in an agency when I was 15 - as
+                a designer. After this, I had accepted to become a programmer (I
+                was using C# at the time). I worked there for a couple of years,
+                and then I moved to another agency, focusing on front-end
+                development - where I learned most of my JavaScript's first
+                skills. 3 years after that I moved to a much bigger agency - in
+                a big city also - and there I learned a lot about PHP, React,
+                Ionic, React Native and other frameworks.
                 <br />
                 <br />
-                Donec placerat velit at justo tincidunt, sit amet iaculis diam
-                eleifend. Phasellus ligula neque, ultricies sit amet ante sed,
-                sollicitudin fermentum nisi. Donec vestibulum diam ac eleifend
-                dapibus. Maecenas iaculis lobortis lorem, at aliquet diam
-                condimentum vitae.
+                Now I'm currently working as a freelance developer in my home
+                city (Feliz - RS). If you want to contact me,{' '}
+                <Link to="/talk-to-me" title="Talk to me">
+                  go over to the Talk to me page
+                </Link>
+                .
               </p>
             </div>
 
