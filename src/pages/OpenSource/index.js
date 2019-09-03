@@ -15,14 +15,14 @@ import { Container } from './styles'
 export default class extends Component {
   state = {
     repos: [],
-    loading: false
+    loading: false,
   }
 
   async getRepos() {
     this.setState({ loading: true })
 
     const res = await fetch(
-      'https://api.github.com/users/YuriBrunetto/repos?sort=pushed'
+      'https://api.github.com/users/YuriBrunetto/repos?sort=pushed',
     )
     const repos = await res.json()
     return repos
@@ -31,7 +31,7 @@ export default class extends Component {
   componentDidMount() {
     this.getRepos().then(repos => {
       let filteredRepos = repos.sort(
-        (a, b) => b.stargazers_count - a.stargazers_count
+        (a, b) => b.stargazers_count - a.stargazers_count,
       )
       this.setState({ repos: filteredRepos.slice(0, 6), loading: false })
     })
@@ -63,6 +63,7 @@ export default class extends Component {
                       className="repo"
                       title={repo.name}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <div className="title">
                         {repo.name}

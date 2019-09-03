@@ -22,6 +22,7 @@ const Socials = props => (
         title={`Follow me on ${item.title}`}
         className="socials-a"
         target="_blank"
+        rel="noopener noreferrer"
       >
         {(() => {
           switch (item.title) {
