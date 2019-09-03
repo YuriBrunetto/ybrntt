@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ProjectLink = styled.a`
   background-color: rgba(255, 255, 255, 0.1);
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -29,8 +29,8 @@ export const ProjectLink = styled.a`
       }
 
       img {
-        filter: grayscale(0);
-        transform: scale(1.1);
+        filter: grayscale(0) blur(0);
+        transform: scale(1);
       }
     }
   }
@@ -85,8 +85,9 @@ export const ProjectLink = styled.a`
     width: 100%;
 
     @media (min-width: 960px) {
+      transform: scale(1.1);
+      filter: grayscale(100%) blur(10px);
       transition: 0.3s;
-      filter: grayscale(100%);
     }
   }
 `

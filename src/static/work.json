@@ -2,37 +2,25 @@
   {
     "title": "SAT-7 Pars",
     "technologies": "React (Next.js), SCSS",
-    "image": "/",
+    "image": "sat7.jpg",
     "url": "https://sat7pars.com/"
   },
   {
     "title": "Mitou na Rede",
     "technologies": "CodeIgniter (PHP), LESS, JS",
-    "image": "/",
+    "image": "mitou-na-rede.jpg",
     "url": "https://www.mitounarede.com.br/"
   },
   {
     "title": "Colégio Murialdo",
     "technologies": "CodeIgniter (PHP), LESS, JS",
-    "image": "/",
+    "image": "colegio-murialdo.jpg",
     "url": "http://www.colegiomurialdo.com.br/"
   },
   {
     "title": "Pisani",
     "technologies": "CodeIgniter (PHP), LESS, JS",
-    "image": "/",
+    "image": "pisani.jpg",
     "url": "https://www.pisani.com.br/"
-  },
-  {
-    "title": "APP Combústivel da Vida",
-    "app": true,
-    "image": "/",
-    "technologies": "Ionic"
-  },
-  {
-    "title": "APP Grendene Kids",
-    "app": true,
-    "image": "/",
-    "technologies": "React Native"
   }
 ]

@@ -20,8 +20,9 @@ export default class extends Component {
             />
 
             <div className="info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio modi dolore ea nihil molestiae? Commodi, nostrum.
+              Do you have an idea for an awesome project? Or only just want to
+              grab a coffee? E-mail me or contact me via my other social links
+              down below.
               <br />
               <Button
                 href="mailto:brunettoyuri@gmail.com"

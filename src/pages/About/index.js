@@ -46,8 +46,8 @@ export default class extends Component {
                 <br />
                 Now I'm currently working as a freelance developer in my home
                 city (Feliz - RS). If you want to contact me,{' '}
-                <Link to="/talk-to-me" title="Talk to me">
-                  go over to the Talk to me page
+                <Link to="/talk-to-me" title="Talk To Me">
+                  go over to the Talk To Me page
                 </Link>
                 .
               </p>
