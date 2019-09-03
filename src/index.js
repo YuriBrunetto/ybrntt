@@ -18,7 +18,7 @@ ReactDOM.render(
     </Router>
     <GlobalStyle />
   </>,
-  document.getElementById('root')
+  document.getElementById('root'),
 )
 
-serviceWorker.unregister()
+// serviceWorker.unregister()
