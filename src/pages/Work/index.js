@@ -11,7 +11,7 @@ import { Container } from './styles'
 
 export default class extends Component {
   state = {
-    appIsMounted: false
+    appIsMounted: false,
   }
 
   componentDidMount() {
@@ -34,7 +34,7 @@ export default class extends Component {
             <ContentHeader
               title="Work"
               subtitle={
-                'A few projects I worked as <em>front-end developer</em>.'
+                'A few projects I collaborated as a <em>front-end developer</em>.'
               }
             />
 

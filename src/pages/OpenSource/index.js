@@ -46,7 +46,7 @@ export default class extends Component {
           <section className="content">
             <ContentHeader
               title="Open-Source projects"
-              subtitle="Projects made by me, for the world."
+              subtitle="Projects made by me, to the world."
             />
 
             {loading ? (

@@ -20,8 +20,8 @@ export default class extends Component {
             />
 
             <div className="info">
-              Do you have an idea for an awesome project? Or only just want to
-              grab a coffee? E-mail me or contact me via my other social links
+              Do you have an idea for an awesome project? Or maybe want to grab
+              a cup of coffee? E-mail me or contact me via my other social links
               down below.
               <br />
               <Button
