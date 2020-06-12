@@ -44,12 +44,7 @@ export default class extends Component {
                 Native and other frameworks.
                 <br />
                 <br />
-                Now I'm currently working as a freelance developer in my home
-                city (Feliz - RS). If you want to contact me,{' '}
-                <Link to="/talk-to-me" title="Talk To Me">
-                  head on to the Talk To Me page
-                </Link>
-                .
+                Now I'm currently working as a Front-end Developer @ <a href="https://meempresta.net/" title="MeEmpresta">MeEmpresta</a>.
               </p>
             </div>
 

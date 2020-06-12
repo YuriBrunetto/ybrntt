@@ -5,7 +5,8 @@ import {
   FaFacebookF,
   FaInstagram,
   FaMediumM,
-  FaSoundcloud
+  FaSoundcloud,
+  FaSpotify
 } from 'react-icons/fa'
 
 // JSON
@@ -38,6 +39,8 @@ const Socials = props => (
               return <FaMediumM />
             case 'SoundCloud':
               return <FaSoundcloud />
+            case 'Spotify':
+              return <FaSpotify />
             default:
               return null
           }

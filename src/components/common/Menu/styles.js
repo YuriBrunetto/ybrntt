@@ -28,11 +28,12 @@ export const Nav = styled.nav`
 
   .nav-a {
     color: #fff;
-    font-family: 'HelveticaNeue-CondensedBlack', sans-serif;
+    font-family: 'HelveticaNeue-CondensedBlack', 'Segoe UI', sans-serif;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
+    font-weight: bolder;
 
     @media (max-width: 959px) {
       font-size: 24px;

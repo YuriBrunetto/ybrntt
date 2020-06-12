@@ -16,9 +16,9 @@ export default class extends Component {
             <h1>
               Hi, I'm Yuri<span>!</span>
             </h1>
-            <h2>Front-end developer, open-source enthusiast &amp; musician.</h2>
+            <h2>Front-end developer, musician &amp; producer.</h2>
             <Socials />
-            <Button to="/work" title="See my work" />
+            <Button to="/about" title="About me" />
           </section>
         </Layout>
       </Container>

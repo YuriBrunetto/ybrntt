@@ -11,9 +11,9 @@ const Menu = ({ menuOpen }) => (
     <Link to="/open-source" title="Open-source" className="nav-a">
       Open-source
     </Link>
-    <Link to="/work" title="Work" className="nav-a">
+    {/* <Link to="/work" title="Work" className="nav-a">
       Work
-    </Link>
+    </Link> */}
     <Link to="/talk-to-me" title="Talk to me" className="nav-a">
       Talk to me
     </Link>
