@@ -1,7 +1,6 @@
 import React from 'react'
 import { hydrate, render } from 'react-dom'
 import { BrowserRouter as Router, Switch } from 'react-router-dom'
-import * as serviceWorker from './serviceWorker'
 import FancyRoute from './components/common/FancyRoute'
 import routes from './routes'
 
@@ -38,5 +37,3 @@ if (rootElement.hasChildNodes()) {
     rootElement
   )
 }
-
-// serviceWorker.unregister()

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import LazyLoad from 'react-lazyload'
-import { Link } from 'react-router-dom'
 
 // Components
 import Layout from '../../layout'
